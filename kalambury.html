@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalambury</title>
+  <script>
+    const passwords = [
+      "kot w butach",
+      "złoty pociąg",
+      "warszawska syrenka",
+      "deszczowa piosenka",
+      "masło maślane",
+      "księżyc w nowiu",
+      "cień wiatru",
+      "szklana pułapka",
+      "taniec z gwiazdami",
+      "słońce w zenicie",
+      "ranny ptaszek",
+      "serce na dłoni",
+      "pies ogrodnika",
+      "puszcza białowieska",
+      "ocean spokoju",
+      "burza w szklance wody",
+      "klucz do sukcesu",
+      "dom z papieru",
+      "most nad przepaścią",
+      "koń trojański",
+      "pływająca wyspa",
+      "wąż w kieszeni",
+      "gruszki na wierzbie",
+      "miłość od pierwszego wejrzenia",
+      "skarpetka nie do pary",
+      "nocne marki",
+      "lis w kurniku",
+      "kamień w bucie",
+      "śpiąca królewna",
+      "niebieski wieloryb",
+      "czarne lustro",
+      "puste słowa",
+      "złota rączka",
+      "dziura w całym",
+      "fale radiowe",
+      "kraina lodu",
+      "miasto duchów",
+      "królik z kapelusza",
+      "papierowy tygrys",
+      "noc polarna",
+      "kwiaty we włosach",
+      "siedem cudów świata",
+      "wielka stopa",
+      "ptasie mleczko",
+      "czerwony dywan",
+      "ogień i woda",
+      "zegar z kukułką",
+      "oko za oko",
+      "sen o Warszawie",
+      "diabelski młyn",
+      "dzikie węże",
+      "skórka od banana",
+      "zielone światło",
+      "kręte schody",
+      "anioł stróż",
+      "biały kruk",
+      "pocztówka z wakacji",
+      "głowa do góry",
+      "gwiazdy na niebie",
+      "mleczna droga",
+      "wędrowne ptaki",
+      "czarna owca",
+      "góra lodowa",
+      "złoty środek",
+      "na fali",
+      "piąte koło u wozu",
+      "łapa w łapę",
+      "ryba bez wody",
+      "ciepłe kluchy",
+      "jeż na drodze",
+      "mgła tajemnicy",
+      "słomiany zapał",
+      "niebieski ptak",
+      "zakochana para",
+      "biała flaga",
+      "czarna dziura",
+      "siedem mórz",
+      "kamienne serce",
+      "słoń w składzie porcelany",
+      "dzwon wolności",
+      "ognisty taniec",
+      "cztery pory roku",
+      "magiczna różdżka",
+      "złoty klucz",
+      "serce dzwonu",
+      "kraina marzeń",
+      "stary kontynent",
+      "czapka niewidka",
+      "ogon komety",
+      "most złamanych serc",
+      "skarby piratów",
+      "latający dywan",
+      "cztery kąty",
+      "pióro feniksa",
+      "tajemniczy ogród",
+      "drzewo życia",
+      "głęboka woda",
+      "ptak w klatce",
+      "deszcz meteorytów"
+    ];
+    function displayPassword() {
+      const i = Math.floor(Math.random() * passwords.length);
+      document.getElementById("passwordDisplay").textContent = passwords[i];
+    }
+    window.onload = displayPassword;
+  </script>
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 0.5em 0;
+    }
+    button {
+      background-color: #1f1f1f;
+      color: #ffffff;
+      border: none;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #333333;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="passwordDisplay"></h1>
+  <button onclick="displayPassword()">Wygeneruj nowe</button>
+</body>
+</html>
